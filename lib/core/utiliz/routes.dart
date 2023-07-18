@@ -1,12 +1,12 @@
 import 'package:go_router/go_router.dart';
-import 'package:labor/features/login/presentation/views/resetpasswordpage.dart';
+import 'package:labor/features/Authentication/presentation/views/resetpasswordpage.dart';
 
-import '../../features/home/presentation/views/home-service.dart';
-import '../../features/login/presentation/views/forgetpassword.dart';
-import '../../features/login/presentation/views/loginpage.dart';
-import '../../features/login/presentation/views/registerpage.dart';
+import '../../features/welcomepage/presentation/views/WelcomePage.dart';
+import '../../features/Authentication/presentation/views/forgetpassword.dart';
+import '../../features/Authentication/presentation/views/loginpage.dart';
+import '../../features/Authentication/presentation/views/registerpage.dart';
 import '../../features/pageviewindicator/presentation/views/pagesviewindicator.dart';
-import '../../features/splash/presentation/views/splashview.dart';
+import '../../features/Splash/presentation/views/splashview.dart';
 
 abstract class AppRouter {
   static const kHomeService = "/homeservice";
@@ -22,7 +22,7 @@ abstract class AppRouter {
     ),
     GoRoute(
       path: kHomeService,
-      builder: (context, state) => const HomeServicePage(),
+      builder: (context, state) => const WelcomePage(),
     ),
     GoRoute(
       path: kPageView,

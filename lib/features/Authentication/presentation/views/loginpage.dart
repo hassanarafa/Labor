@@ -5,12 +5,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../constants.dart';
 import '../../../../core/utiliz/routes.dart';
-import '../../../../core/widgets/custom_text_form_field.dart';
+import '../../../../core/widgets/customtextformfield.dart';
 import '../../../../core/widgets/custombutton.dart';
 import '../../../../generated/l10n.dart';
 
-class RegisterPage extends StatelessWidget {
-  const RegisterPage({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class RegisterPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  S.of(context).registertitle,
+                  S.of(context).logintitle,
                   style: (S.of(context).titlepageviewtext == "TextEnglish")
                       ? GoogleFonts.quicksand(
                           fontSize: 28, fontWeight: FontWeight.w700)
@@ -64,36 +64,9 @@ class RegisterPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          S.of(context).fullname,
-                          style: const TextStyle(
-                              fontFamily: "din-next-lt-w23", fontSize: 16),
-                        ),
-                        const SizedBox(height: 8),
-                        Customtextformfield(
-                          x: false,
-                          hinttext: S.of(context).hinttextfullname,
-                          suffixicon: IconButton(
-                              onPressed: () {},
-                              icon: const Icon(Icons.person_2_outlined)),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 18),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 19),
-                  child: SizedBox(
-                    width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          S.of(context).phone,
-                          style: const TextStyle(
-                              fontFamily: "din-next-lt-w23", fontSize: 16),
-                        ),
+                        Text(S.of(context).phone,
+                            style: const TextStyle(
+                                fontFamily: "din-next-lt-w23", fontSize: 16)),
                         const SizedBox(height: 8),
                         Customtextformfield(
                           x: false,
@@ -114,11 +87,9 @@ class RegisterPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          S.of(context).password,
-                          style: const TextStyle(
-                              fontFamily: "din-next-lt-w23", fontSize: 16),
-                        ),
+                        Text(S.of(context).password,
+                            style: const TextStyle(
+                                fontFamily: "din-next-lt-w23", fontSize: 16)),
                         const SizedBox(height: 8),
                         Customtextformfield(
                           x: false,
@@ -129,6 +100,31 @@ class RegisterPage extends StatelessWidget {
                         ),
                       ],
                     ),
+                  ),
+                ),
+                const SizedBox(height: 26),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 19),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          GoRouter.of(context).push(AppRouter.kForgetPassPage);
+                        },
+                        child: Text(
+                          S.of(context).forgetpassword,
+                          style:
+                              (S.of(context).titlepageviewtext == "TextEnglish")
+                                  ? GoogleFonts.quicksand(
+                                      fontSize: 16, fontWeight: FontWeight.w500)
+                                  : const TextStyle(
+                                      fontFamily: "din-next-lt-w23",
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w400),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 const SizedBox(height: 30),
@@ -144,7 +140,7 @@ class RegisterPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              S.of(context).registerbuttontext,
+                              S.of(context).loginbuttontext,
                               style: const TextStyle(
                                   fontFamily: "din-next-lt-w23",
                                   color: Colors.white,
@@ -257,7 +253,7 @@ class RegisterPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      S.of(context).haveaccount,
+                      S.of(context).donthaveaccount,
                       style: (S.of(context).titlepageviewtext == "TextEnglish")
                           ? GoogleFonts.quicksand(
                               fontSize: 16, fontWeight: FontWeight.w500)
@@ -268,10 +264,10 @@ class RegisterPage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        GoRouter.of(context).push(AppRouter.kLoginPage);
+                        GoRouter.of(context).push(AppRouter.kRegisterPage);
                       },
                       child: Text(
-                        S.of(context).SignIn,
+                        S.of(context).SignUp,
                         style:
                             (S.of(context).titlepageviewtext == "TextEnglish")
                                 ? GoogleFonts.quicksand(

@@ -17,7 +17,7 @@ class Customtextformfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 60,
-      decoration: const BoxDecoration(color: Color(0xffF9FFF6)),
+      decoration: BoxDecoration(color: bavkgroundColor),
       child: TextFormField(
           obscureText: x!,
           obscuringCharacter: '*',

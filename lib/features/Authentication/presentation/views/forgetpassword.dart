@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../constants.dart';
-import '../../../../core/widgets/custom_text_form_field.dart';
+import '../../../../core/utiliz/routes.dart';
+import '../../../../core/widgets/customtextformfield.dart';
 import '../../../../core/widgets/custombutton.dart';
 import '../../../../generated/l10n.dart';
 
-class ResetPassword extends StatelessWidget {
-  const ResetPassword({super.key});
+class ForgetPassword extends StatelessWidget {
+  const ForgetPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class ResetPassword extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  S.of(context).resetpasswordpagetitle,
+                  S.of(context).forgetpasspagetitle,
                   style: (S.of(context).titlepageviewtext == "TextEnglish")
                       ? GoogleFonts.quicksand(
                           fontSize: 28, fontWeight: FontWeight.w700)
@@ -36,10 +38,10 @@ class ResetPassword extends StatelessWidget {
                   padding: EdgeInsets.symmetric(
                       horizontal:
                           (S.of(context).titlepageviewtext == "TextEnglish")
-                              ? 95
+                              ? 110
                               : 130),
                   child: Text(
-                    S.of(context).resetpasswordpagesubtitle,
+                    S.of(context).forgetpasspagesubtitle,
                     style: (S.of(context).titlepageviewtext == "TextEnglish")
                         ? GoogleFonts.quicksand(
                             color: const Color(0xffB5B5B5),
@@ -61,36 +63,13 @@ class ResetPassword extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(S.of(context).password,
+                        Text(S.of(context).phone,
                             style: const TextStyle(
                                 fontFamily: "din-next-lt-w23", fontSize: 16)),
                         const SizedBox(height: 8),
                         Customtextformfield(
                           x: false,
-                          hinttext: S.of(context).hinttextpassword,
-                          suffixicon: IconButton(
-                              onPressed: () {},
-                              icon: const Icon(Icons.phone_outlined)),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 26),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 19),
-                  child: SizedBox(
-                    width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(S.of(context).confirmpassword,
-                            style: const TextStyle(
-                                fontFamily: "din-next-lt-w23", fontSize: 16)),
-                        const SizedBox(height: 8),
-                        Customtextformfield(
-                          x: false,
-                          hinttext: S.of(context).hinttextconfirmpassword,
+                          hinttext: S.of(context).hinttextphone,
                           suffixicon: IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.phone_outlined)),
@@ -112,7 +91,7 @@ class ResetPassword extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              S.of(context).savepassword,
+                              S.of(context).resetpassword,
                               style: const TextStyle(
                                   fontFamily: "din-next-lt-w23",
                                   color: Colors.white,
@@ -123,7 +102,9 @@ class ResetPassword extends StatelessWidget {
                         backcolor: kPrimaryColor,
                         bottomLeft: 10,
                         bottomRight: 10,
-                        onPressed: () {},
+                        onPressed: () {
+                          GoRouter.of(context).push(AppRouter.kResetPassPage);
+                        },
                         topLeft: 10,
                         topRight: 10,
                       )),

@@ -9,18 +9,18 @@ import '../../../../core/utiliz/routes.dart';
 import '../../../../core/widgets/custombutton.dart';
 import '../../../../core/widgets/customerrormessage.dart';
 import '../../../../generated/l10n.dart';
-import '../manager/cubit/home_service_cubit.dart';
+import '../manager/cubit/WelcomePageCubit.dart';
 
-class HomeServicePageBody extends StatelessWidget {
-  const HomeServicePageBody({super.key});
+class WelcomePageBody extends StatelessWidget {
+  const WelcomePageBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<HomeServiceCubit, HomeServiceState>(
+    return BlocBuilder<WelcomePageCubit, WelcomePageState>(
       builder: (context, state) {
-        if (state is HomeServiceSuccess) {
+        if (state is WelcomePageSuccess) {
           return Padding(
-              padding: (BlocProvider.of<HomeServiceCubit>(context).language ==
+              padding: (BlocProvider.of<WelcomePageCubit>(context).language ==
                       "English")
                   ? const EdgeInsets.only(top: 113, left: 20)
                   : const EdgeInsets.only(top: 113, right: 20),
@@ -39,7 +39,7 @@ class HomeServicePageBody extends StatelessWidget {
                   Text(
                     S.of(context).homeserviceTitle,
                     style:
-                        (BlocProvider.of<HomeServiceCubit>(context).language ==
+                        (BlocProvider.of<WelcomePageCubit>(context).language ==
                                 "English")
                             ? GoogleFonts.quicksand(
                                 height: 1,
@@ -53,7 +53,7 @@ class HomeServicePageBody extends StatelessWidget {
                   ),
                   const SizedBox(height: 76),
                   Text(S.of(context).selectlanguage,
-                      style: (BlocProvider.of<HomeServiceCubit>(context)
+                      style: (BlocProvider.of<WelcomePageCubit>(context)
                                   .language ==
                               "English")
                           ? GoogleFonts.quicksand(
@@ -77,12 +77,12 @@ class HomeServicePageBody extends StatelessWidget {
                             activeColor: kPrimaryColor,
                             value: "English",
                             groupValue:
-                                BlocProvider.of<HomeServiceCubit>(context)
+                                BlocProvider.of<WelcomePageCubit>(context)
                                     .language,
                             onChanged: (value) {
-                              BlocProvider.of<HomeServiceCubit>(context)
+                              BlocProvider.of<WelcomePageCubit>(context)
                                   .language = value!;
-                              BlocProvider.of<HomeServiceCubit>(context)
+                              BlocProvider.of<WelcomePageCubit>(context)
                                   .updatedata(language: value);
                             },
                           ),
@@ -99,7 +99,7 @@ class HomeServicePageBody extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(S.of(context).arabic,
-                            style: (BlocProvider.of<HomeServiceCubit>(context)
+                            style: (BlocProvider.of<WelcomePageCubit>(context)
                                         .language ==
                                     "English")
                                 ? GoogleFonts.quicksand(
@@ -114,12 +114,12 @@ class HomeServicePageBody extends StatelessWidget {
                             activeColor: kPrimaryColor,
                             value: S.of(context).arabic,
                             groupValue:
-                                BlocProvider.of<HomeServiceCubit>(context)
+                                BlocProvider.of<WelcomePageCubit>(context)
                                     .language,
                             onChanged: (value) {
-                              BlocProvider.of<HomeServiceCubit>(context)
+                              BlocProvider.of<WelcomePageCubit>(context)
                                   .language = value!;
-                              BlocProvider.of<HomeServiceCubit>(context)
+                              BlocProvider.of<WelcomePageCubit>(context)
                                   .updatedata(language: value);
                             },
                           ),
@@ -139,7 +139,7 @@ class HomeServicePageBody extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(S.of(context).checkboxtext1,
-                            style: (BlocProvider.of<HomeServiceCubit>(context)
+                            style: (BlocProvider.of<WelcomePageCubit>(context)
                                         .language ==
                                     "English")
                                 ? GoogleFonts.quicksand(
@@ -152,7 +152,7 @@ class HomeServicePageBody extends StatelessWidget {
                                     fontWeight: FontWeight.w500,
                                     color: Color(0xffb6b6b6))),
                         Text(S.of(context).checkboxtext2,
-                            style: (BlocProvider.of<HomeServiceCubit>(context)
+                            style: (BlocProvider.of<WelcomePageCubit>(context)
                                         .language ==
                                     "English")
                                 ? GoogleFonts.quicksand(
@@ -170,7 +170,7 @@ class HomeServicePageBody extends StatelessWidget {
                   const SizedBox(height: 30),
                   Padding(
                     padding:
-                        (BlocProvider.of<HomeServiceCubit>(context).language ==
+                        (BlocProvider.of<WelcomePageCubit>(context).language ==
                                 "English")
                             ? const EdgeInsets.only(right: 20)
                             : const EdgeInsets.only(left: 20),
@@ -202,7 +202,7 @@ class HomeServicePageBody extends StatelessWidget {
                   )
                 ],
               ));
-        } else if (state is HomeServiceFailure) {
+        } else if (state is WelcomePageFailure) {
           return CustomErrorMessage(errormessage: state.errormessage);
         } else {
           return Center(

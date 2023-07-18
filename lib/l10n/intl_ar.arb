@@ -32,5 +32,7 @@
     "facebook":"فيس بوك",
     "google":"جوجل",
     "donthaveaccount":"ليس لديك حساب ؟",
-    "SignUp":"تسجيل جديد"
+    "haveaccount":"لديك حساب ؟",
+    "SignUp":"تسجيل جديد",
+    "SignIn":"تسجيل دخول"
 }

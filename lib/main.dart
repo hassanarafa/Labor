@@ -7,7 +7,7 @@ import 'firebase_options.dart';
 
 import 'constants.dart';
 import 'core/utiliz/routes.dart';
-import 'features/home/presentation/manager/cubit/home_service_cubit.dart';
+import 'features/welcomepage/presentation/manager/cubit/WelcomePageCubit.dart';
 import 'generated/l10n.dart';
 
 void main() async {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => HomeServiceCubit()..updatedata(),
+          create: (context) => WelcomePageCubit()..updatedata(),
         )
       ],
       child: MaterialApp.router(

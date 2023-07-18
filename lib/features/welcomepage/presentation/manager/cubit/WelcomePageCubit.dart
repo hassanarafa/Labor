@@ -2,25 +2,25 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:labor/constants.dart';
 
-part 'home_service_state.dart';
+part 'WelcomePageStates.dart';
 
-class HomeServiceCubit extends Cubit<HomeServiceState> {
-  HomeServiceCubit() : super(HomeServiceInitial());
+class WelcomePageCubit extends Cubit<WelcomePageState> {
+  WelcomePageCubit() : super(WelcomePageInitial());
   String language = "English";
   updatedata({language}) {
-    emit(HomeServiceLoading());
+    emit(WelcomePageLoading());
     try {
       if (language == "Arabic") {
         locale = const Locale("ar");
-        emit(HomeServiceSuccess());
+        emit(WelcomePageSuccess());
       } else {
         locale = const Locale("en");
         print(language);
-        emit(HomeServiceSuccess());
+        emit(WelcomePageSuccess());
         print(language);
       }
     } catch (e) {
-      emit(HomeServiceFailure(e.toString()));
+      emit(WelcomePageFailure(e.toString()));
     }
   }
 }

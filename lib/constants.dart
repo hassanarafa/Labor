@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 Color kPrimaryColor = const Color(0xff5fd068);
+Color bavkgroundColor = const Color(0xffF9FFF6);
 Locale? locale;
 List<String> x = [
   "assets/images/Group 4.png",
