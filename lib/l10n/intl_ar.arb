@@ -7,5 +7,21 @@
     "button": "دخول",
     "buttonpageview": "التالي",
     "titlepageviewtext":"TextArabic",
-    "subtitlepageviewtext": "TextArabic"
+    "subtitlepageviewtext": "TextArabic",
+    "logintitle":"تسجيل الدخول",
+    "loginandregistersubtitle":"برجاء ادخال رقم الهاتف ورقم المرور للدخول",
+    "loginhinttextphone":"ادخل رقم الجوال",
+    "loginhinttextpassword":"ادخل رقم المرور",
+    "loginbuttontext":"تسجيل", 
+    "register-title":"تسجيل جديد",
+    "register-buttontext":"تسجيل",
+    "reset-password-page-title":"اعادة كلمة المرور",
+    "password":"رقم المرور",
+    "phone":"رقم الجوال",
+    "forgetpassword":"نسيت رقم المرور ؟",
+    "or":"او",
+    "facebook":"فيس بوك",
+    "google":"جوجل",
+    "donthaveaccount":"ليس لديك حساب ؟",
+    "SignUp":"تسجيل جديد"
 }

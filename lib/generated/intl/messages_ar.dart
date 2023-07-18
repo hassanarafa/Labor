@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "SignUp": MessageLookupByLibrary.simpleMessage("تسجيل جديد"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
         "button": MessageLookupByLibrary.simpleMessage("دخول"),
         "buttonpageview": MessageLookupByLibrary.simpleMessage("التالي"),
@@ -29,8 +30,25 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("بتسجيلك هنا فانت توافق علي "),
         "checkboxtext2":
             MessageLookupByLibrary.simpleMessage("الشروط والاحكام"),
+        "donthaveaccount":
+            MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
+        "facebook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
+        "forgetpassword":
+            MessageLookupByLibrary.simpleMessage("نسيت رقم المرور ؟"),
+        "google": MessageLookupByLibrary.simpleMessage("جوجل"),
         "homeserviceTitle": MessageLookupByLibrary.simpleMessage(
             "جميع الخدمات المنزلية في مكان واحد"),
+        "loginandregistersubtitle": MessageLookupByLibrary.simpleMessage(
+            "برجاء ادخال رقم الهاتف ورقم المرور للدخول"),
+        "loginbuttontext": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "loginhinttextpassword":
+            MessageLookupByLibrary.simpleMessage("ادخل رقم المرور"),
+        "loginhinttextphone":
+            MessageLookupByLibrary.simpleMessage("ادخل رقم الجوال"),
+        "logintitle": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "or": MessageLookupByLibrary.simpleMessage("او"),
+        "password": MessageLookupByLibrary.simpleMessage("رقم المرور"),
+        "phone": MessageLookupByLibrary.simpleMessage("رقم الجوال"),
         "selectlanguage": MessageLookupByLibrary.simpleMessage("اختار اللغة"),
         "subtitlepageviewtext":
             MessageLookupByLibrary.simpleMessage("TextArabic"),

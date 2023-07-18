@@ -100,7 +100,17 @@ class _PsgeViewState extends State<PsgeView> {
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(40)),
               child: CustomButton(
-                fontSize: 18,
+                buttonContent: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      (islast == true)
+                          ? S.of(context).button
+                          : S.of(context).buttonpageview,
+                      style: const TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ],
+                ),
                 backcolor: kPrimaryColor,
                 bottomLeft: 10,
                 bottomRight: 10,
@@ -114,10 +124,6 @@ class _PsgeViewState extends State<PsgeView> {
                         curve: Curves.fastLinearToSlowEaseIn);
                   }
                 },
-                text: (islast == true)
-                    ? S.of(context).button
-                    : S.of(context).buttonpageview,
-                textcolor: Colors.white,
                 topLeft: 10,
                 topRight: 10,
               )),

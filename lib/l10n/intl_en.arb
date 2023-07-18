@@ -7,5 +7,21 @@
     "button": "Enter",
     "buttonpageview": "Next",
     "titlepageviewtext":"TextEnglish",
-    "subtitlepageviewtext": "TextEnglish"
+    "subtitlepageviewtext": "TextEnglish",
+    "logintitle":"Login",
+    "loginandregistersubtitle":"Please Enter your Phone and password to continue",
+    "loginhinttextphone":"Enter Your Phone",
+    "loginhinttextpassword":"Enter Your Password",
+    "loginbuttontext":"Login",
+    "register-title":"Register",
+    "register-button-text":"Register",
+    "reset-password-page-title":"Reset Password",
+    "password":"Password",
+    "phone":"Phone",
+    "forgetpassword":"Forget Password ?",
+    "or":"OR",
+    "facebook":"Facebook",
+    "google":"Google",
+    "donthaveaccount":"Don't Have Account ?",
+    "SignUp":"Sign Up"
 }

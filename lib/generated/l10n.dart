@@ -139,6 +139,142 @@ class S {
       args: [],
     );
   }
+
+  /// `Login`
+  String get logintitle {
+    return Intl.message(
+      'Login',
+      name: 'logintitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please Enter your Phone and password to continue`
+  String get loginandregistersubtitle {
+    return Intl.message(
+      'Please Enter your Phone and password to continue',
+      name: 'loginandregistersubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Phone`
+  String get loginhinttextphone {
+    return Intl.message(
+      'Enter Your Phone',
+      name: 'loginhinttextphone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Password`
+  String get loginhinttextpassword {
+    return Intl.message(
+      'Enter Your Password',
+      name: 'loginhinttextpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get loginbuttontext {
+    return Intl.message(
+      'Login',
+      name: 'loginbuttontext',
+      desc: '',
+      args: [],
+    );
+  }
+
+  // skipped getter for the 'register-title' key
+
+  // skipped getter for the 'register-button-text' key
+
+  // skipped getter for the 'reset-password-page-title' key
+
+  /// `Password`
+  String get password {
+    return Intl.message(
+      'Password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone {
+    return Intl.message(
+      'Phone',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forget Password ?`
+  String get forgetpassword {
+    return Intl.message(
+      'Forget Password ?',
+      name: 'forgetpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OR`
+  String get or {
+    return Intl.message(
+      'OR',
+      name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facebook`
+  String get facebook {
+    return Intl.message(
+      'Facebook',
+      name: 'facebook',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Google`
+  String get google {
+    return Intl.message(
+      'Google',
+      name: 'google',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't Have Account ?`
+  String get donthaveaccount {
+    return Intl.message(
+      'Don\'t Have Account ?',
+      name: 'donthaveaccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get SignUp {
+    return Intl.message(
+      'Sign Up',
+      name: 'SignUp',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

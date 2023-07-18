@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
         "button": MessageLookupByLibrary.simpleMessage("Enter"),
         "buttonpageview": MessageLookupByLibrary.simpleMessage("Next"),
@@ -29,8 +30,25 @@ class MessageLookup extends MessageLookupByLibrary {
             "By creating an account, you agree to our"),
         "checkboxtext2":
             MessageLookupByLibrary.simpleMessage("Term and Condtions"),
+        "donthaveaccount":
+            MessageLookupByLibrary.simpleMessage("Don\'t Have Account ?"),
+        "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
+        "forgetpassword":
+            MessageLookupByLibrary.simpleMessage("Forget Password ?"),
+        "google": MessageLookupByLibrary.simpleMessage("Google"),
         "homeserviceTitle":
             MessageLookupByLibrary.simpleMessage("Find Your Home Service"),
+        "loginandregistersubtitle": MessageLookupByLibrary.simpleMessage(
+            "Please Enter your Phone and password to continue"),
+        "loginbuttontext": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginhinttextpassword":
+            MessageLookupByLibrary.simpleMessage("Enter Your Password"),
+        "loginhinttextphone":
+            MessageLookupByLibrary.simpleMessage("Enter Your Phone"),
+        "logintitle": MessageLookupByLibrary.simpleMessage("Login"),
+        "or": MessageLookupByLibrary.simpleMessage("OR"),
+        "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "selectlanguage":
             MessageLookupByLibrary.simpleMessage("Select Language"),
         "subtitlepageviewtext":

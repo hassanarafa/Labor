@@ -7,15 +7,13 @@ class CustomButton extends StatelessWidget {
       required this.bottomRight,
       required this.topRight,
       required this.bottomLeft,
-      required this.text,
       required this.backcolor,
-      required this.textcolor,
       required this.onPressed,
-      required this.fontSize});
-  final double topLeft, bottomRight, topRight, bottomLeft, fontSize;
-  final String text;
-  final Color backcolor, textcolor;
+      required this.buttonContent});
+  final double topLeft, bottomRight, topRight, bottomLeft;
+  final Color backcolor;
   final void Function()? onPressed;
+  final Widget buttonContent;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -30,10 +28,7 @@ class CustomButton extends StatelessWidget {
                       bottomLeft: Radius.circular(bottomLeft))),
               backgroundColor: backcolor),
           onPressed: onPressed,
-          child: Text(
-            text,
-            style: TextStyle(color: textcolor, fontSize: fontSize),
-          )),
+          child: buttonContent),
     );
   }
 }

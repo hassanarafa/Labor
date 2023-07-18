@@ -180,15 +180,22 @@ class HomeServicePageBody extends StatelessWidget {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(40)),
                         child: CustomButton(
-                          fontSize: 18,
+                          buttonContent: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                S.of(context).button,
+                                style: const TextStyle(
+                                    color: Colors.white, fontSize: 18),
+                              ),
+                            ],
+                          ),
                           backcolor: kPrimaryColor,
                           bottomLeft: 10,
                           bottomRight: 10,
                           onPressed: () {
                             GoRouter.of(context).push(AppRouter.kPageView);
                           },
-                          text: S.of(context).button,
-                          textcolor: Colors.white,
                           topLeft: 10,
                           topRight: 10,
                         )),
