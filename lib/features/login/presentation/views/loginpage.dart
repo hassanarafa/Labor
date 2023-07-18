@@ -108,16 +108,21 @@ class LoginPage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text(
-                        S.of(context).forgetpassword,
-                        style:
-                            (S.of(context).titlepageviewtext == "TextEnglish")
-                                ? GoogleFonts.quicksand(
-                                    fontSize: 16, fontWeight: FontWeight.w500)
-                                : const TextStyle(
-                                    fontFamily: "din-next-lt-w23",
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w400),
+                      GestureDetector(
+                        onTap: () {
+                          GoRouter.of(context).push(AppRouter.kForgetPassPage);
+                        },
+                        child: Text(
+                          S.of(context).forgetpassword,
+                          style:
+                              (S.of(context).titlepageviewtext == "TextEnglish")
+                                  ? GoogleFonts.quicksand(
+                                      fontSize: 16, fontWeight: FontWeight.w500)
+                                  : const TextStyle(
+                                      fontFamily: "din-next-lt-w23",
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w400),
+                        ),
                       )
                     ],
                   ),

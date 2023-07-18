@@ -34,6 +34,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "donthaveaccount":
             MessageLookupByLibrary.simpleMessage("Don\'t Have Account ?"),
         "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
+        "forgetpasspagesubtitle": MessageLookupByLibrary.simpleMessage(
+            "Enter your Phone Number to reset password."),
+        "forgetpasspagetitle":
+            MessageLookupByLibrary.simpleMessage("Forget Password"),
         "forgetpassword":
             MessageLookupByLibrary.simpleMessage("Forget Password ?"),
         "fullname": MessageLookupByLibrary.simpleMessage("Full Name"),
@@ -56,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "registerbuttontext": MessageLookupByLibrary.simpleMessage("Register"),
         "registertitle": MessageLookupByLibrary.simpleMessage("Register"),
+        "resetpassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "resetpasswordpagetitle":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
         "selectlanguage":

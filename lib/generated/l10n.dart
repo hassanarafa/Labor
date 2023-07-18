@@ -270,6 +270,36 @@ class S {
     );
   }
 
+  /// `Reset Password`
+  String get resetpassword {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forget Password`
+  String get forgetpasspagetitle {
+    return Intl.message(
+      'Forget Password',
+      name: 'forgetpasspagetitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your Phone Number to reset password.`
+  String get forgetpasspagesubtitle {
+    return Intl.message(
+      'Enter your Phone Number to reset password.',
+      name: 'forgetpasspagesubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `OR`
   String get or {
     return Intl.message(

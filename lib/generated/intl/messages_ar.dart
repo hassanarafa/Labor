@@ -33,6 +33,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "donthaveaccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
         "facebook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
+        "forgetpasspagesubtitle": MessageLookupByLibrary.simpleMessage(
+            "برجاء ادخال رقم الهاتف لتاكيد حسابك"),
+        "forgetpasspagetitle":
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "forgetpassword":
             MessageLookupByLibrary.simpleMessage("نسيت رقم المرور ؟"),
         "fullname": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
@@ -54,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("رقم الجوال"),
         "registerbuttontext": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "registertitle": MessageLookupByLibrary.simpleMessage("تسجيل جديد"),
+        "resetpassword": MessageLookupByLibrary.simpleMessage("ارسال"),
         "resetpasswordpagetitle":
             MessageLookupByLibrary.simpleMessage("اعادة كلمة المرور"),
         "selectlanguage": MessageLookupByLibrary.simpleMessage("اختار اللغة"),

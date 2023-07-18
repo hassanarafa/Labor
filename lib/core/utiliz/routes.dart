@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 
 import '../../features/home/presentation/views/home-service.dart';
+import '../../features/login/presentation/views/forgetpassword.dart';
 import '../../features/login/presentation/views/loginpage.dart';
 import '../../features/login/presentation/views/registerpage.dart';
 import '../../features/pageviewindicator/presentation/views/pagesviewindicator.dart';
@@ -11,6 +12,7 @@ abstract class AppRouter {
   static const kPageView = "/pageview";
   static const kLoginPage = "/loginpage";
   static const kRegisterPage = "/registerpage";
+  static const kForgetPassPage = "/forgetpasspage";
   static final router = GoRouter(routes: [
     GoRoute(
       path: "/",
@@ -31,6 +33,10 @@ abstract class AppRouter {
     GoRoute(
       path: kRegisterPage,
       builder: (context, state) => const RegisterPage(),
+    ),
+    GoRoute(
+      path: kForgetPassPage,
+      builder: (context, state) => const ForgetPassword(),
     ),
   ]);
 }
