@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../constants.dart';
+import '../../../../core/utiliz/routes.dart';
 import '../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../core/widgets/custombutton.dart';
 import '../../../../generated/l10n.dart';
@@ -100,7 +102,9 @@ class ForgetPassword extends StatelessWidget {
                         backcolor: kPrimaryColor,
                         bottomLeft: 10,
                         bottomRight: 10,
-                        onPressed: () {},
+                        onPressed: () {
+                          GoRouter.of(context).push(AppRouter.kResetPassPage);
+                        },
                         topLeft: 10,
                         topRight: 10,
                       )),

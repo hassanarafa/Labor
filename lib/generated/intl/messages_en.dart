@@ -31,6 +31,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "By creating an account, you agree to our"),
         "checkboxtext2":
             MessageLookupByLibrary.simpleMessage("Term and Condtions"),
+        "confirmpassword":
+            MessageLookupByLibrary.simpleMessage("Confirm Password"),
         "donthaveaccount":
             MessageLookupByLibrary.simpleMessage("Don\'t Have Account ?"),
         "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
@@ -43,6 +45,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "fullname": MessageLookupByLibrary.simpleMessage("Full Name"),
         "google": MessageLookupByLibrary.simpleMessage("Google"),
         "haveaccount": MessageLookupByLibrary.simpleMessage("Have Account ?"),
+        "hinttextconfirmpassword":
+            MessageLookupByLibrary.simpleMessage("Enter Your Confirm Password"),
         "hinttextfullname":
             MessageLookupByLibrary.simpleMessage("Enter Your Full Name"),
         "hinttextpassword":
@@ -61,8 +65,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "registerbuttontext": MessageLookupByLibrary.simpleMessage("Register"),
         "registertitle": MessageLookupByLibrary.simpleMessage("Register"),
         "resetpassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "resetpasswordpagesubtitle": MessageLookupByLibrary.simpleMessage(
+            "Create strong and secured new password."),
         "resetpasswordpagetitle":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "savepassword": MessageLookupByLibrary.simpleMessage("Save Password"),
         "selectlanguage":
             MessageLookupByLibrary.simpleMessage("Select Language"),
         "subtitlepageviewtext":

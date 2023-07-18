@@ -250,6 +250,26 @@ class S {
     );
   }
 
+  /// `Confirm Password`
+  String get confirmpassword {
+    return Intl.message(
+      'Confirm Password',
+      name: 'confirmpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Confirm Password`
+  String get hinttextconfirmpassword {
+    return Intl.message(
+      'Enter Your Confirm Password',
+      name: 'hinttextconfirmpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Phone`
   String get phone {
     return Intl.message(
@@ -280,6 +300,16 @@ class S {
     );
   }
 
+  /// `Save Password`
+  String get savepassword {
+    return Intl.message(
+      'Save Password',
+      name: 'savepassword',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Forget Password`
   String get forgetpasspagetitle {
     return Intl.message(
@@ -295,6 +325,16 @@ class S {
     return Intl.message(
       'Enter your Phone Number to reset password.',
       name: 'forgetpasspagesubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create strong and secured new password.`
+  String get resetpasswordpagesubtitle {
+    return Intl.message(
+      'Create strong and secured new password.',
+      name: 'resetpasswordpagesubtitle',
       desc: '',
       args: [],
     );

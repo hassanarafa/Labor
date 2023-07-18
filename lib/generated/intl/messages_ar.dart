@@ -30,6 +30,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("بتسجيلك هنا فانت توافق علي "),
         "checkboxtext2":
             MessageLookupByLibrary.simpleMessage("الشروط والاحكام"),
+        "confirmpassword":
+            MessageLookupByLibrary.simpleMessage("تاكيد رقم المرور"),
         "donthaveaccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
         "facebook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
@@ -41,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("نسيت رقم المرور ؟"),
         "fullname": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "google": MessageLookupByLibrary.simpleMessage("جوجل"),
+        "hinttextconfirmpassword":
+            MessageLookupByLibrary.simpleMessage("ادخل رقم الجوال"),
         "hinttextfullname":
             MessageLookupByLibrary.simpleMessage("ادخل الاسم بالكامل"),
         "hinttextpassword":
@@ -59,8 +63,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "registerbuttontext": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "registertitle": MessageLookupByLibrary.simpleMessage("تسجيل جديد"),
         "resetpassword": MessageLookupByLibrary.simpleMessage("ارسال"),
+        "resetpasswordpagesubtitle": MessageLookupByLibrary.simpleMessage(
+            "برجاء ادخال كلمة مرور لتاكيد حسابك"),
         "resetpasswordpagetitle":
             MessageLookupByLibrary.simpleMessage("اعادة كلمة المرور"),
+        "savepassword": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "selectlanguage": MessageLookupByLibrary.simpleMessage("اختار اللغة"),
         "subtitlepageviewtext":
             MessageLookupByLibrary.simpleMessage("TextArabic"),
