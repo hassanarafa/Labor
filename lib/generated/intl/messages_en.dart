@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "SignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
         "button": MessageLookupByLibrary.simpleMessage("Enter"),
@@ -35,20 +36,28 @@ class MessageLookup extends MessageLookupByLibrary {
         "facebook": MessageLookupByLibrary.simpleMessage("Facebook"),
         "forgetpassword":
             MessageLookupByLibrary.simpleMessage("Forget Password ?"),
+        "fullname": MessageLookupByLibrary.simpleMessage("Full Name"),
         "google": MessageLookupByLibrary.simpleMessage("Google"),
+        "haveaccount": MessageLookupByLibrary.simpleMessage("Have Account ?"),
+        "hinttextfullname":
+            MessageLookupByLibrary.simpleMessage("Enter Your Full Name"),
+        "hinttextpassword":
+            MessageLookupByLibrary.simpleMessage("Enter Your Password"),
+        "hinttextphone":
+            MessageLookupByLibrary.simpleMessage("Enter Your Phone"),
         "homeserviceTitle":
             MessageLookupByLibrary.simpleMessage("Find Your Home Service"),
         "loginandregistersubtitle": MessageLookupByLibrary.simpleMessage(
             "Please Enter your Phone and password to continue"),
         "loginbuttontext": MessageLookupByLibrary.simpleMessage("Login"),
-        "loginhinttextpassword":
-            MessageLookupByLibrary.simpleMessage("Enter Your Password"),
-        "loginhinttextphone":
-            MessageLookupByLibrary.simpleMessage("Enter Your Phone"),
         "logintitle": MessageLookupByLibrary.simpleMessage("Login"),
         "or": MessageLookupByLibrary.simpleMessage("OR"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
+        "registerbuttontext": MessageLookupByLibrary.simpleMessage("Register"),
+        "registertitle": MessageLookupByLibrary.simpleMessage("Register"),
+        "resetpasswordpagetitle":
+            MessageLookupByLibrary.simpleMessage("Reset Password"),
         "selectlanguage":
             MessageLookupByLibrary.simpleMessage("Select Language"),
         "subtitlepageviewtext":

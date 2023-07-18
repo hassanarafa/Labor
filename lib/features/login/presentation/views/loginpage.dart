@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../constants.dart';
+import '../../../../core/utiliz/routes.dart';
 import '../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../core/widgets/custombutton.dart';
 import '../../../../generated/l10n.dart';
@@ -62,11 +64,13 @@ class LoginPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(S.of(context).phone),
+                        Text(S.of(context).phone,
+                            style: const TextStyle(
+                                fontFamily: "din-next-lt-w23", fontSize: 16)),
                         const SizedBox(height: 8),
                         Customtextformfield(
                           x: false,
-                          hinttext: S.of(context).loginhinttextphone,
+                          hinttext: S.of(context).hinttextphone,
                           suffixicon: IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.phone_outlined)),
@@ -83,11 +87,13 @@ class LoginPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(S.of(context).password),
+                        Text(S.of(context).password,
+                            style: const TextStyle(
+                                fontFamily: "din-next-lt-w23", fontSize: 16)),
                         const SizedBox(height: 8),
                         Customtextformfield(
                           x: false,
-                          hinttext: S.of(context).loginhinttextpassword,
+                          hinttext: S.of(context).hinttextpassword,
                           suffixicon: IconButton(
                               onPressed: () {},
                               icon: const Icon(Icons.remove_red_eye_outlined)),
@@ -131,7 +137,9 @@ class LoginPage extends StatelessWidget {
                             Text(
                               S.of(context).loginbuttontext,
                               style: const TextStyle(
-                                  color: Colors.white, fontSize: 18),
+                                  fontFamily: "din-next-lt-w23",
+                                  color: Colors.white,
+                                  fontSize: 18),
                             ),
                           ],
                         ),
@@ -249,15 +257,21 @@ class LoginPage extends StatelessWidget {
                               fontSize: 16,
                               fontWeight: FontWeight.w400),
                     ),
-                    Text(
-                      S.of(context).SignUp,
-                      style: (S.of(context).titlepageviewtext == "TextEnglish")
-                          ? GoogleFonts.quicksand(
-                              fontSize: 16, fontWeight: FontWeight.w700)
-                          : const TextStyle(
-                              fontFamily: "din-next-lt-w23",
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600),
+                    GestureDetector(
+                      onTap: () {
+                        GoRouter.of(context).push(AppRouter.kRegisterPage);
+                      },
+                      child: Text(
+                        S.of(context).SignUp,
+                        style:
+                            (S.of(context).titlepageviewtext == "TextEnglish")
+                                ? GoogleFonts.quicksand(
+                                    fontSize: 16, fontWeight: FontWeight.w700)
+                                : const TextStyle(
+                                    fontFamily: "din-next-lt-w23",
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600),
+                      ),
                     ),
                   ],
                 )

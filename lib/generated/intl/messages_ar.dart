@@ -35,20 +35,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "facebook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
         "forgetpassword":
             MessageLookupByLibrary.simpleMessage("نسيت رقم المرور ؟"),
+        "fullname": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
         "google": MessageLookupByLibrary.simpleMessage("جوجل"),
+        "hinttextfullname":
+            MessageLookupByLibrary.simpleMessage("ادخل الاسم بالكامل"),
+        "hinttextpassword":
+            MessageLookupByLibrary.simpleMessage("ادخل رقم المرور"),
+        "hinttextphone":
+            MessageLookupByLibrary.simpleMessage("ادخل رقم الجوال"),
         "homeserviceTitle": MessageLookupByLibrary.simpleMessage(
             "جميع الخدمات المنزلية في مكان واحد"),
         "loginandregistersubtitle": MessageLookupByLibrary.simpleMessage(
             "برجاء ادخال رقم الهاتف ورقم المرور للدخول"),
         "loginbuttontext": MessageLookupByLibrary.simpleMessage("تسجيل"),
-        "loginhinttextpassword":
-            MessageLookupByLibrary.simpleMessage("ادخل رقم المرور"),
-        "loginhinttextphone":
-            MessageLookupByLibrary.simpleMessage("ادخل رقم الجوال"),
         "logintitle": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("رقم المرور"),
         "phone": MessageLookupByLibrary.simpleMessage("رقم الجوال"),
+        "registerbuttontext": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "registertitle": MessageLookupByLibrary.simpleMessage("تسجيل جديد"),
+        "resetpasswordpagetitle":
+            MessageLookupByLibrary.simpleMessage("اعادة كلمة المرور"),
         "selectlanguage": MessageLookupByLibrary.simpleMessage("اختار اللغة"),
         "subtitlepageviewtext":
             MessageLookupByLibrary.simpleMessage("TextArabic"),

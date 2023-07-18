@@ -16,6 +16,7 @@ class Customtextformfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 60,
       decoration: const BoxDecoration(color: Color(0xffF9FFF6)),
       child: TextFormField(
           obscureText: x!,
@@ -33,7 +34,8 @@ class Customtextformfield extends StatelessWidget {
             suffixIconColor: const Color(0xffDFDFDF),
             contentPadding: const EdgeInsets.all(20),
             hintText: hinttext,
-            hintStyle: const TextStyle(color: Color(0xffDFDFDF)),
+            hintStyle: const TextStyle(
+                fontFamily: "din-next-lt-w23", color: Color(0xffDFDFDF)),
             enabledBorder: OutlineInputBorder(
                 borderSide: const BorderSide(color: Color(0xffDFDFDF)),
                 borderRadius: BorderRadius.circular(5)),

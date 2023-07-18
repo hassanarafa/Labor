@@ -161,20 +161,30 @@ class S {
   }
 
   /// `Enter Your Phone`
-  String get loginhinttextphone {
+  String get hinttextphone {
     return Intl.message(
       'Enter Your Phone',
-      name: 'loginhinttextphone',
+      name: 'hinttextphone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Full Name`
+  String get hinttextfullname {
+    return Intl.message(
+      'Enter Your Full Name',
+      name: 'hinttextfullname',
       desc: '',
       args: [],
     );
   }
 
   /// `Enter Your Password`
-  String get loginhinttextpassword {
+  String get hinttextpassword {
     return Intl.message(
       'Enter Your Password',
-      name: 'loginhinttextpassword',
+      name: 'hinttextpassword',
       desc: '',
       args: [],
     );
@@ -190,11 +200,45 @@ class S {
     );
   }
 
-  // skipped getter for the 'register-title' key
+  /// `Register`
+  String get registertitle {
+    return Intl.message(
+      'Register',
+      name: 'registertitle',
+      desc: '',
+      args: [],
+    );
+  }
 
-  // skipped getter for the 'register-button-text' key
+  /// `Register`
+  String get registerbuttontext {
+    return Intl.message(
+      'Register',
+      name: 'registerbuttontext',
+      desc: '',
+      args: [],
+    );
+  }
 
-  // skipped getter for the 'reset-password-page-title' key
+  /// `Reset Password`
+  String get resetpasswordpagetitle {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetpasswordpagetitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Name`
+  String get fullname {
+    return Intl.message(
+      'Full Name',
+      name: 'fullname',
+      desc: '',
+      args: [],
+    );
+  }
 
   /// `Password`
   String get password {
@@ -266,11 +310,31 @@ class S {
     );
   }
 
+  /// `Have Account ?`
+  String get haveaccount {
+    return Intl.message(
+      'Have Account ?',
+      name: 'haveaccount',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Sign Up`
   String get SignUp {
     return Intl.message(
       'Sign Up',
       name: 'SignUp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign In`
+  String get SignIn {
+    return Intl.message(
+      'Sign In',
+      name: 'SignIn',
       desc: '',
       args: [],
     );
