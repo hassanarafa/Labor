@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
         "button": MessageLookupByLibrary.simpleMessage("Enter"),
+        "buttonpageview": MessageLookupByLibrary.simpleMessage("Next"),
         "checkboxtext1": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to our"),
         "checkboxtext2":
@@ -31,6 +32,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "homeserviceTitle":
             MessageLookupByLibrary.simpleMessage("Find Your Home Service"),
         "selectlanguage":
-            MessageLookupByLibrary.simpleMessage("Select Language")
+            MessageLookupByLibrary.simpleMessage("Select Language"),
+        "subtitlepageviewtext":
+            MessageLookupByLibrary.simpleMessage("TextEnglish"),
+        "titlepageviewtext": MessageLookupByLibrary.simpleMessage("TextEnglish")
       };
 }

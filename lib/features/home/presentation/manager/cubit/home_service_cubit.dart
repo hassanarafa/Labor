@@ -16,7 +16,6 @@ class HomeServiceCubit extends Cubit<HomeServiceState> {
       } else {
         locale = const Locale("en");
         print(language);
-
         emit(HomeServiceSuccess());
         print(language);
       }

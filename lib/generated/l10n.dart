@@ -109,6 +109,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Next`
+  String get buttonpageview {
+    return Intl.message(
+      'Next',
+      name: 'buttonpageview',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `TextEnglish`
+  String get titlepageviewtext {
+    return Intl.message(
+      'TextEnglish',
+      name: 'titlepageviewtext',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `TextEnglish`
+  String get subtitlepageviewtext {
+    return Intl.message(
+      'TextEnglish',
+      name: 'subtitlepageviewtext',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

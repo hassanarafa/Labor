@@ -1,8 +1,11 @@
 {
-  "homeserviceTitle": "جميع الخدمات المنزلية في مكان واحد",
-  "selectlanguage": "اختار اللغة",
-  "arabic": "العربية",
-  "checkboxtext1": "بتسجيلك هنا فانت توافق علي ",
-  "checkboxtext2": "الشروط والاحكام",
-  "button": "دخول"
+    "homeserviceTitle": "جميع الخدمات المنزلية في مكان واحد",
+    "selectlanguage": "اختار اللغة",
+    "arabic": "العربية",
+    "checkboxtext1": "بتسجيلك هنا فانت توافق علي ",
+    "checkboxtext2": "الشروط والاحكام",
+    "button": "دخول",
+    "buttonpageview": "التالي",
+    "titlepageviewtext":"TextArabic",
+    "subtitlepageviewtext": "TextArabic"
 }

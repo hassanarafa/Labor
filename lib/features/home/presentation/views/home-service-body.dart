@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:labor/constants.dart';
 
 import '../../../../core/utiliz/assets.dart';
+import '../../../../core/utiliz/routes.dart';
 import '../../../../core/widgets/custombutton.dart';
 import '../../../../core/widgets/customerrormessage.dart';
 import '../../../../generated/l10n.dart';
@@ -43,7 +45,8 @@ class HomeServicePageBody extends StatelessWidget {
                                 height: 1,
                                 fontSize: 48,
                                 fontWeight: FontWeight.w700)
-                            : GoogleFonts.elMessiri(
+                            : const TextStyle(
+                                fontFamily: "din-next-lt-w23",
                                 height: 1,
                                 fontSize: 38,
                                 fontWeight: FontWeight.w400),
@@ -55,8 +58,10 @@ class HomeServicePageBody extends StatelessWidget {
                               "English")
                           ? GoogleFonts.quicksand(
                               fontSize: 20, fontWeight: FontWeight.w700)
-                          : GoogleFonts.elMessiri(
-                              fontSize: 18, fontWeight: FontWeight.w500)),
+                          : const TextStyle(
+                              fontFamily: "din-next-lt-w23",
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500)),
                   const SizedBox(height: 20),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -99,8 +104,10 @@ class HomeServicePageBody extends StatelessWidget {
                                     "English")
                                 ? GoogleFonts.quicksand(
                                     fontSize: 18, fontWeight: FontWeight.w600)
-                                : GoogleFonts.elMessiri(
-                                    fontSize: 18, fontWeight: FontWeight.w400)),
+                                : const TextStyle(
+                                    fontFamily: "din-next-lt-w23",
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400)),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Radio(
@@ -139,10 +146,11 @@ class HomeServicePageBody extends StatelessWidget {
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
                                     color: const Color(0xffb6b6b6))
-                                : GoogleFonts.elMessiri(
+                                : const TextStyle(
+                                    fontFamily: "din-next-lt-w23",
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
-                                    color: const Color(0xffb6b6b6))),
+                                    color: Color(0xffb6b6b6))),
                         Text(S.of(context).checkboxtext2,
                             style: (BlocProvider.of<HomeServiceCubit>(context)
                                         .language ==
@@ -151,10 +159,11 @@ class HomeServicePageBody extends StatelessWidget {
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
                                     color: const Color(0xff5FD068))
-                                : GoogleFonts.elMessiri(
+                                : const TextStyle(
+                                    fontFamily: "din-next-lt-w23",
                                     fontSize: 14,
                                     fontWeight: FontWeight.w400,
-                                    color: const Color(0xff5FD068)))
+                                    color: Color(0xff5FD068)))
                       ],
                     ),
                   ),
@@ -175,7 +184,9 @@ class HomeServicePageBody extends StatelessWidget {
                           backcolor: kPrimaryColor,
                           bottomLeft: 10,
                           bottomRight: 10,
-                          onPressed: () {},
+                          onPressed: () {
+                            GoRouter.of(context).push(AppRouter.kPageView);
+                          },
                           text: S.of(context).button,
                           textcolor: Colors.white,
                           topLeft: 10,
